@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/employees', [EmployeeController::class,'index']);
+Route::get('/employees/{id}', [EmployeeController::class,'employee']);
+Route::get('/employees/{id}/salary', [EmployeeController::class,'salary']);
